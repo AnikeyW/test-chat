@@ -13,7 +13,7 @@ import { ChatInputModes, IMessage } from "@/entities/message/model/types";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
-import { MY_ID } from "@/shared/constants";
+import { BOT_AVATAR_SRC, MY_ID } from "@/shared/constants";
 import Image from "next/image";
 
 dayjs.extend(utc);
@@ -61,7 +61,7 @@ const ChatInputBox = () => {
         time: dayjs().toISOString(),
         user: {
           id: inputValue === "bot" ? 1 : MY_ID,
-          avatar: inputValue === "bot" ? "/usericon3.jpg" : "/usericon1.jpg",
+          avatar: inputValue === "bot" ? BOT_AVATAR_SRC : "",
           name: "Janet",
           position: "Engineering",
           status: "online",

@@ -1,1 +1,3 @@
 export const MY_ID = 0;
+export const BOT_AVATAR_SRC =
+  "https://s3-alpha-sig.figma.com/img/dbaa/16a5/0e7db451d868b67382bd8b61d8ac3da1?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cD3BIsLymoUq4AAsn9pgQF61ttGaHkhwYh8tkEDCo1E5fSDOYjRxxWVH64v99yVZdjXGtSzPDcr92pzI9MOea7bqZRhhbBwX7FlXNtVmx3Yrdbk7qO-7AD8QOGllGcuuOHsHxmxH2y7h0EiiTjtl~zaSegpuMkr1wZb3nd-3Wq~GHywUM0AkPItDynkhm7JLVKgO4uC1ULemR1~z~0g1oK1KYMscwZHNDlE-9wW-22WkuNU8RmAd9LFTFUGBStOb9i7uGgnxLADMecC4RS-CfbtSZjb5DCWyheUboIU4UctJLsmI8oEHZVntn8TRbCyBNVVpiBq95eK4DPaOifZrLw__";
