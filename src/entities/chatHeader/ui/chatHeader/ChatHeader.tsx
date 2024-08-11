@@ -48,9 +48,11 @@ const ChatHeader = () => {
         <div className={styles.name}>🦄 Team Unicorns</div>
         <div className={styles.lastTimeOnline}>last seen 45 minutes ago</div>
       </div>
-      <button className={styles.optionsButton}>
-        <EllipsisOutlined />
-      </button>
+      <div className={styles.optionsButton}>
+        <button>
+          <EllipsisOutlined />
+        </button>
+      </div>
     </div>
   );
 };
