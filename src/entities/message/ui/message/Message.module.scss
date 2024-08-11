@@ -1,0 +1,215 @@
+.root{
+  display: flex;
+
+  .myMessageBlock{
+    display: inline-block;
+    border-radius: 6px;
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+    max-width: 80%;
+    background-color: #007aff;
+    color: #ffffff;
+    position: relative;
+
+    .text{
+      margin-right: 80px;
+      font-size: 14px;
+      line-height: 20px;
+      word-break: break-word;
+      white-space: pre-wrap;
+    }
+
+    .image{
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin-right: 80px;
+
+      img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .info{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 5px;
+
+      .date{
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      .deliveryCheck{
+        color: #81E299;
+        font-size: 12px;
+        display: flex;
+        margin-right: -5px;
+        align-items: center;
+
+        .secondCheck{
+          color: #81E299;
+          font-size: 12px;
+          position: relative;
+          right: 5px;
+          top: 0;
+        }
+      }
+    }
+
+
+  }
+
+  .userAvatarBox{
+    position: relative;
+
+    .userAvatar{
+      position: relative;
+      min-width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        min-width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 2px solid rgba(98, 98, 98, 0.16);
+      }
+    }
+
+    .userStatusIndicator{
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 2px solid white;
+      top: 24px;
+      right: 10px;
+    }
+  }
+
+  .otherMessageBlock{
+    display: inline-block;
+    border-radius: 6px;
+    padding: 0 7px 2px 7px;
+    max-width: 80%;
+    background-color: #f2f2f7;
+    position: relative;
+
+    .userInfo{
+
+      .userName{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        margin-right: 0.5rem;
+      }
+
+      .userPosition{
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    .text{
+      margin-right: 60px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #2C2C2E;
+      word-break: break-word;
+      white-space: pre-wrap;
+    }
+
+    .date{
+      text-align: right;
+      font-size: 12px;
+      line-height: 14px;
+      color: #666668;
+    }
+  }
+
+  .myTriangle {
+    position: absolute;
+    right: -15px;
+    top: -2px;
+    width: 27px;
+    height: 26px;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: rotate(-67.5deg) translateY(-9px);
+
+    &:after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #007aff;
+      clip-path: polygon(0% 0%, 50% 50%, 100% 0%);
+      transform: rotate(67.5deg) translateY(8px);
+    }
+  }
+
+  .otherTriangle{
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 27px;
+    height: 18px;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: rotate(-67.5deg) translateY(-9px);
+
+    &:after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #f2f2f7;
+      clip-path: polygon(0% 0%, 50% 50%, 100% 0%);
+      transform: rotate(67.5deg) translateY(8px);
+    }
+  }
+
+  .actionsButtons{
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-top: auto;
+
+    span {
+      cursor: pointer;
+      margin-right: 0.5rem;
+      color: #666668;
+
+      &:first-child {
+        transition: color 0.3s;
+
+        &:hover {
+          color: red;
+        }
+      }
+
+      &:last-child {
+        transition: color 0.3s;
+
+        &:hover {
+          color: #007aff;
+        }
+      }
+    }
+  }
+}
+
+.root:hover {
+  .actionsButtons{
+    opacity: 1;
+  }
+}

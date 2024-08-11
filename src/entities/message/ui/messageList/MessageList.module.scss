@@ -1,0 +1,15 @@
+.root{
+  flex: auto;
+  border-bottom: 1px solid #e5e5ea;
+  border-top: 1px solid #e5e5ea;
+  padding: 0 1rem 0 .75rem;
+  overflow-y: auto;
+
+  .date{
+    font-size: 12px;
+    color: #666668;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+}

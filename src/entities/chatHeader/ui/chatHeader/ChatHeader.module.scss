@@ -1,0 +1,56 @@
+.root{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.75rem;
+
+  .usersIcons{
+    display: flex;
+    flex: 0.5;
+    //max-width: 84px;
+
+    .userIcon{
+      position: relative;
+      min-width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid white;
+
+      margin-left: -8px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .chatInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    .name{
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+      color: #2C2C2E;
+    }
+
+    .lastTimeOnline{
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      color: #666668;
+    }
+  }
+
+  .optionsButton{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 24px;
+  }
+}
